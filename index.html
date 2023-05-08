@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <title>Encriptador - Luis</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="logo">
+                <h1><img src="imagenes/logo.png" alt="Logo""></h1>
+            </div>
+            <div class="Encriptar-texto">
+            <textarea name="textarea" id="ingresarText" cols="30" rows="10" class="texto" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+        
+            <p class="advertencia"><img src="imagenes/Frame 1.png" alt="advertencia de letra minuscula y sin acentos"></p>
+            <div class="botones">
+                <input type="submit" value="Encriptar" id="botonEncriptar" class="boton" onclick="encriptar()">
+                <input type="submit" value="Desencriptar" id="botonDesencriptar" class="boton" onclick="desencriptar()">
+            </div>
+
+
+
+            <div class="derecha">
+                <textarea name="text" id="encriptado" cols="30" rows="11" class="textoDesencriptado" readonly="readonly"></textarea>
+                <h2 class="text-h2" id="mensajeNoencontrado">Ningun mensaje fue <br> encontrado</h2>
+                <br>
+                <p class="parrafo-area" id="parrafoIngresar">Ingrese el texto que desees <br> encriptar o desencriptar</p>
+            </div>
+            <div class="botonCopy">
+                <input type="button" value="Copiar" class="boton-copiar" id="mostrarBotoncopy" onclick="copiar()">
+            </div>
+
+            <div class="alerta" id="alerta">
+                <h3 class="tiltleMensaje">🚫Error</h3>
+                <h4 class="alertaNomensaje">Ningun mensaje fue encontrado</h4>
+                <input type="submit" value="aceptar" class="botonMensaje" onclick="btnalerta()">
+            </div>
+            <div class="alertaCopy" id="alertaCopy">
+                <h3 class="tiltleCopiado">✅Exito</h3>
+                <h4 class="alertaCopiado">Texto Copiado exitosamente</h4>
+                <input type="submit" value="aceptar" class="botonCopiado" onclick="btncopia()">
+            </div>
+        </div>
+
+    
+    
+        <script src="scrip.js"></script>
+    
+
+    </body>
+</html>

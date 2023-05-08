@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #F3F5FC;
+}
+
+.logo{
+   position: absolute;
+   top: 30px;
+   left: 20px;
+}
+
+.texto{
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    width: 45%;
+    padding-bottom: 3%;
+    font-weight: bold;
+    font-size:larger;
+    border: none;
+    outline: none;
+    resize: none;
+    line-height: 1.5;
+    background: #F3F5FC;
+ 
+   
+}
+
+::placeholder{
+    color: #0A3871;
+    
+}
+
+.advertencia{
+    position: absolute;
+    left: 14%;
+    bottom: 20%; 
+}
+
+.botones{
+    position: absolute;
+    bottom: 10%;
+    left: 13%;  
+}
+
+.boton{
+    padding: 20px;
+    margin:  0 15px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+   
+}
+
+.boton:nth-child(1){
+    background: darkblue;
+    color: white;
+}
+.boton:nth-child(2){
+    background: #D8DFE8;
+    color: darkblue;
+}
+.boton:hover:nth-child(1){
+    background: rgb(2, 2, 80);
+    transform: scale(1.3);
+}
+
+.boton:hover:nth-child(2){
+    background: #c7ddfa;
+    transform: scale(1.3);
+}
+
+.derecha{
+    position: absolute;
+    right: 30px;
+    margin: 50px;
+    padding: 30px 40px;
+    background: #FFFFFF;
+    border-radius: 32px;
+    height: 70%;
+
+  
+}
+
+.textoDesencriptado{
+    width: 300px;
+    background-image: url(imagenes/muneco.png);
+    background-repeat: no-repeat;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 20px;
+    resize: none;
+}
+
+.text-h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+.parrafo-area{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.botonCopy{
+    position: absolute;
+    right: 13%;
+    bottom: 20%;
+}
+
+.boton-copiar{
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: #D8DFE8;
+    font-weight: bold;
+    visibility: hidden;
+    
+    
+}
+
+.boton-copiar:hover{
+    background: #c7ddfa;
+    transform: scale(1.3);
+}
+
+/* ALERTA DE NO MENSAJE ENCONTRADO */
+.alerta{
+    position: absolute;
+    background: white;
+    margin: 5% 30%;
+    border-radius: 10px;
+    visibility: hidden;
+    
+   
+}
+
+.tiltleMensaje{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-weight: bold;
+    
+   
+}
+.alertaNomensaje{
+    padding: 50px 80px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.botonMensaje{
+    position: relative;
+    margin-left: 80%;
+    padding: 11px;
+    bottom: 20px;
+    right: 20px;
+    font-weight: bold;
+    background: #2c82eb;   
+    border: none;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.botonMensaje:hover{
+    background: #044697;
+    transform: scale(1.3);
+}
+
+
+/* ALERTA DE COPIADO */
+.alertaCopy{
+    position: absolute;
+    background: white;
+    margin: 5% 30%;
+    border-radius: 10px;
+    visibility: hidden;
+     
+    
+ }
+.tiltleCopiado{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-weight: bold;
+}
+.alertaCopiado{
+    position: relative;
+    right: 20px;
+    margin: 12px 0;
+    padding: 50px 100px;
+    font-weight: bold;
+}
+
+.botonCopiado{
+    position: relative;
+    left: 75%;
+    padding: 11px;
+    bottom: 20px;
+    right: 20px;
+    font-weight: bold;
+    background: #2c82eb;   
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.botonCopiado:hover{
+    background: #044697;
+    transform: scale(1.3);
+}
+
